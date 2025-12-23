@@ -91,6 +91,7 @@ body{
 .homesubheading {
     display: flex;
     flex: auto;
+    text-align: center;
     position: relative;
     font-style: italic;
     font-size: 1.1rem;
@@ -103,30 +104,29 @@ body{
     border: 1px solid var(--border-color);
 }
 
-@media (max-width: 768px) {
-    .genKnowledge {
-        display: flex;
-    }
 
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        background-color: #2F2420;
-        position:absolute;
-        top: 100%;
-        width: 100%;
-        left: 0;
-        padding: 1rem 0;
-        z-index: 100;
-        border-bottom: 2px solid var(--accent-gold);
-    }
+.genKnowledge {
+    display: flex;
+}
+
+.nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #2F2420;
+    position:absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    padding: 1rem 0;
+    z-index: 100;
+    border-bottom: 2px solid var(--accent-gold);
+}
     
-    .nav-links.active {
-        display: flex;
-    }
+.nav-links.active {
+    display: flex;
+}
 
-    .nav-links li {
-        text-align: center;
-        margin: 1rem 0;
-    }
+.nav-links li {
+    text-align: center;
+    margin: 1rem 0;
 }
