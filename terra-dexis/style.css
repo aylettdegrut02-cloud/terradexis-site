@@ -9,12 +9,13 @@ Secondary Accent: Faded Gold #C5A059*/
     --font-heading: 'Playfair Display', serif;
     --font-body: 'Lora', serif;
     --font-code: 'Courier Prime', monospace;
-    --bg-primary: #f4ecd8;
-    --bg-secondary: #E8DCCA;
-    --text-main: #2C241B;
-    --accent-pop: #8A3324;
-    --border-color: #D3C4A5;
-    --accent-gold: #C5A059;
+    --bg-primary: #121212;
+    --bg-secondary: #1E1E1E;
+    --text-main: #D4D4D4;
+    --accent-primary: #38bdf8;
+    --border-color: #1E293B;
+    --accent-secondary: #0077FF;
+    --input-field: #555555;
     --shadow-soft: 0 4px 6px rgba(44, 36, 27, 0.1);
 }
 
@@ -29,30 +30,56 @@ body{
     background-color: var(--bg-primary);
 }
 
-img {
-    display: block;
-    margin:auto;
+.topbar {
+    display: flex;
     width: 100%;
+    margin:auto;
+    justify-content: center;
+    padding: 0 1rem 0 1rem;
+    background-color: var(--bg-secondary);
+    box-shadow: var(--shadow-soft);
 }
 
 .homeheader {
+    padding: 2rem 2rem 2rem 3.5rem;
     margin: auto;
-    width: 200px;
-    height: 300px;
+    width: auto;
+    height: auto;
+}
+
+img {
+    display: block;
+    margin:auto;
+    width: 30%;
 }
 
 .homesubheading {
     display: flex;
     flex: auto;
+    justify-content: center;
     text-align: center;
-    position: relative;
     font-style: italic;
     font-size: 1.1rem;
     background-color: var(--bg-secondary);
     border-radius: 4px;
     padding: 2rem 2rem 2rem 3.5rem;
-    margin: 2rem 0;
-    color:#2C241B;
+    width: fit-content;
+    margin: auto;
+    color: var(--text-main);
     box-shadow: var(--shadow-soft);
-    border: 1px solid var(--border-color);
+}
+
+.homeList{
+    display:flex;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-main);
 }
