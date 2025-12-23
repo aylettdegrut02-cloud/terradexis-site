@@ -110,6 +110,10 @@ body{
 
     .nav-links {
         display: none;
+        flex-direction: column;
+        background-color: #2F2420;
+        position:absolute;
+        top: 100%;
         width: 100%;
         left: 0;
         padding: 1rem 0;
