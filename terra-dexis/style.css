@@ -3,11 +3,11 @@ Secondary Background: Darker Vellum #E8DCCA
 Main Text: Iron Ink #2C241B
 Primary Accent: Leather Red #8A3324
 Secondary Accent: Faded Gold #C5A059*/
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Tektur:wght@400..900&display=swap');
 
 :root{
-    --font-heading: 'Playfair Display', serif;
-    --font-body: 'Lora', serif;
+    --font-heading: 'Tektur', sans serif;
+    --font-body: 'Electrolize', sans serif;
     --font-code: 'Courier Prime', monospace;
     --bg-primary: #121212;
     --bg-secondary: #1E1E1E;
@@ -17,6 +17,15 @@ Secondary Accent: Faded Gold #C5A059*/
     --accent-secondary: #0077FF;
     --input-field: #555555;
     --shadow-soft: 0 4px 6px rgba(44, 36, 27, 0.1);
+    --highlight-border:rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+    font-family: var(--font-heading);
+}
+
+h2 {
+    font-family: var(--font-heading);
 }
 
 body{
@@ -34,10 +43,10 @@ body{
     display: flex;
     width: 100%;
     margin:auto;
+    font-family: var(--font-heading);
     justify-content: center;
     padding: 0 1rem 0 1rem;
     background-color: var(--bg-secondary);
-    box-shadow: var(--shadow-soft);
 }
 
 .homeheader {
@@ -58,21 +67,22 @@ img {
     flex: auto;
     justify-content: center;
     text-align: center;
-    font-style: italic;
     font-size: 1.1rem;
     background-color: var(--bg-secondary);
-    border-radius: 4px;
+    border-radius: 10px;
     padding: 2rem 2rem 2rem 3.5rem;
     width: fit-content;
     margin: auto;
     color: var(--text-main);
-    box-shadow: var(--shadow-soft);
+    border: 1px solid var(--highlight-border);
 }
 
 .homeList{
     display:flex;
+    flex: content;
     width: 100%;
-    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
     text-align: center;
     list-style-type: none;
     margin: 0;
@@ -80,6 +90,11 @@ img {
 }
 
 a {
+    margin: 2rem;
+    padding: 0 2rem 0 2rem;
     text-decoration: none;
     color: var(--text-main);
+    border: 1px solid var(--highlight-border);
+    border-radius: 10px;
+    background-color: var(--bg-secondary);
 }
