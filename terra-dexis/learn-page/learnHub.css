@@ -1,0 +1,18 @@
+:root{
+    --font-heading: 'Tektur', sans serif;
+    --font-body: 'Electrolize', sans serif;
+    --font-code: 'Courier Prime', monospace;
+    --bg-primary: #121212;
+    --bg-secondary: #1E1E1E;
+    --text-main: #D4D4D4;
+    --accent-primary: #38bdf8;
+    --border-color: #1E293B;
+    --accent-secondary: #0077FF;
+    --input-field: #555555;
+    --shadow-soft: 0 4px 6px rgba(44, 36, 27, 0.1);
+    --highlight-border:rgba(255, 255, 255, 0.1);
+}
+
+body {
+    background-color: var(--bg-primary);
+}
