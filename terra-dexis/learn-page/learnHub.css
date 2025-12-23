@@ -12,14 +12,24 @@
     --accent-secondary: #0077FF;
     --input-field: #555555;
     --shadow-soft: 0 4px 6px rgba(44, 36, 27, 0.1);
-    --highlight-border:rgba(255, 255, 255, 0.1);
+    --highlight-border:rgba(255, 255, 255, 0.10);
 }
 
 body {
     font-family: var(--font-body);
+    color: var(--text-main);
     background-color: var(--bg-primary);
 }
 
-.basicLinkButton {
-    font
+.foundationasButton {
+    display: flex;
+    width: 30%;
+    height: auto;
+    margin-right: 0;
+    justify-content: center;
+    font-family: var(--font-heading);
+    color: var(--text-main);
+    background-color: var(--bg-secondary);
+    border-radius: 10px;
+    border: 2px solid var(--highlight-border);
 }
