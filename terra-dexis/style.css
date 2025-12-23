@@ -1,0 +1,128 @@
+/*  Primary Background: aged cream #F4ECD8
+Secondary Background: Darker Vellum #E8DCCA
+Main Text: Iron Ink #2C241B
+Primary Accent: Leather Red #8A3324
+Secondary Accent: Faded Gold #C5A059*/
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root{
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Lora', serif;
+    --font-code: 'Courier Prime', monospace;
+    --bg-primary: #f4ecd8;
+    --bg-secondary: #E8DCCA;
+    --text-main: #2C241B;
+    --accent-pop: #8A3324;
+    --border-color: #D3C4A5;
+    --accent-gold: #C5A059;
+    --shadow-soft: 0 4px 6px rgba(44, 36, 27, 0.1);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: var(--font-body);
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--text-main);
+    background-color: var(--bg-primary);
+}
+
+.homeheader {
+    display: flex;
+    flex: auto;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    text-align: center;
+    color:#2C241B;
+}
+
+.navbar{
+    display:flex;    
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2F2420;
+    padding: 1rem 2rem;
+    color: #f4ecd8;
+    position: relative;
+    border-bottom: 2px solid var(--accent-gold);
+
+}
+
+.logo{
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #f4ecd8;
+    font-family: var(--font-body);
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent-gold);
+}
+
+.genKnowledge {
+    display:none;
+    background:none;
+    border:none;
+    cursor:pointer;
+    flex-direction: column;
+    gap:5px;
+}
+
+.genKnowledge span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #f4ecd8;
+    border-radius: 2px;
+}
+
+.homesubheading {
+    display: flex;
+    flex: auto;
+    position: relative;
+    font-style: italic;
+    font-size: 1.1rem;
+    background-color: var(--bg-secondary);
+    border-radius: 4px;
+    padding: 2rem 2rem 2rem 3.5rem;
+    margin: 2rem 0;
+    color:#2C241B;
+    box-shadow: var(--shadow-soft);
+    border: 1px solid var(--border-color);
+}
+
+@media (max-width: 768px) {
+    .genKnowledge {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        left: 0;
+        padding: 1rem 0;
+        z-index: 100;
+        border-bottom: 2px solid var(--accent-gold);
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 1rem 0;
+    }
+}

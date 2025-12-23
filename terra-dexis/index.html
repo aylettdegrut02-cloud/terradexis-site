@@ -2,12 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terradexis</title>
 </head>
 <body>
-    <h1>Terradexis Homepage</h1>
+    <nav class ="navbar">
+        <div class="logo">Terradexis</div>
+        <button class="genKnowledge" id="genKnowledge">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Law</a></li>
+            <li><a href="index.html">Science</a></li>
+            <li><a href="index.html">History</a></li>
+        </ul>
+    </nav>
+    <div class="homeheader">
+    <h1>Terradexis Homepage</h1>
+    </div>
+    <div class="homesubheading">
     <p> The purpose is to house information that is interesting to me and may be to others</p>
+    </div>
+    <script>
+
+    const genKnowledge = document.getElementById('genKnowledge');
+    const navLinks = document.getElementById('nav-links')
+
+    genKnowledge.addEventListener('click', function(){
+        navLinks.classList.toggle('active');
+        console.log("Menu toggled!")
+    });
+</script>
 </body>
 </html>
