@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Tektur:wght@400..900&display=swap');
+
 :root{
     --font-heading: 'Tektur', sans serif;
     --font-body: 'Electrolize', sans serif;
@@ -14,5 +16,10 @@
 }
 
 body {
+    font-family: var(--font-body);
     background-color: var(--bg-primary);
+}
+
+.basicLinkButton {
+    font
 }
