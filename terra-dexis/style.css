@@ -3,7 +3,7 @@
 :root{
     --font-heading: 'Space Grotesk', sans-serif;
     --font-body: 'Space Grotesk', sans-serif;
-    --font-code: 'Courier Prime', monospace;
+    --font-code: 'JetBrains Mono', monospace;
     --bg-primary: #121212;
     --bg-secondary: #1E1E1E;
     --text-main: #D4D4D4;
@@ -15,12 +15,15 @@
     --highlight-border:rgba(255, 255, 255, 0.1);
 }
 
-h1 {
+h1, h2, h3 {
     font-family: var(--font-heading);
+    font-weight: 600;
+    letter-spacing: -0.02em;
 }
 
-h2 {
-    font-family: var(--font-body);
+code, pre{
+    font-family:var(--font-code);
+    font-size: 400;
 }
 
 .topbar {
@@ -28,6 +31,7 @@ h2 {
     width: 100%;
     margin:auto;
     font-family: var(--font-heading);
+    font-size: 400;
     justify-content: center;
     padding: 0 1rem 0 1rem;
     background-color: var(--bg-secondary);
