@@ -20,7 +20,7 @@ h1 {
 }
 
 h2 {
-    font-family: var(--font-heading);
+    font-family: var(--font-body);
 }
 
 body{
@@ -78,7 +78,7 @@ img {
     flex: content;
     width: 100%;
     height: 100%;
-    justify-content: space-around;
+    justify-content: space-evenly;
     text-align: center;
     list-style-type: none;
     margin: 0;
