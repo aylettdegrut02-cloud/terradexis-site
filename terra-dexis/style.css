@@ -23,17 +23,6 @@ h2 {
     font-family: var(--font-body);
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    font-family: var(--font-body);
-    font-size: 18px;
-    line-height: 1.6;
-    color: var(--text-main);
-    background-color: var(--bg-primary);
-}
-
 .topbar {
     display: flex;
     width: 100%;
@@ -56,6 +45,22 @@ img {
     display: block;
     margin:auto;
     width: 30%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: var(--font-body);
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--text-main);
+    background-color: var(--bg-primary);
+}
+
+main{
+    flex:1;
 }
 
 .homesubheading {
@@ -96,4 +101,5 @@ a {
 }
 
 .copyright{
+    margin: auto;
 }
