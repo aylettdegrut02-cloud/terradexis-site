@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Tektur:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap'); body { font-family: 'Space Grotesk', sans-serif; } h1, h2, h3 { font-weight: 600; letter-spacing: -0.02em; } code, pre { font-family: 'JetBrains Mono', monospace; }
 
 :root{
     --font-heading: 'Tektur', sans serif;
