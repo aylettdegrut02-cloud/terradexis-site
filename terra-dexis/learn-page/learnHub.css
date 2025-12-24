@@ -15,9 +15,6 @@
     --highlight-border:rgba(255, 255, 255, 0.10);
 }
 
-ul {
-}
-
 body {
     display:flex;
     flex-direction: column;
@@ -31,5 +28,18 @@ main{
     flex:1;
 }
 
+.learnHublist{
+    display: flex;
+    flex-direction: column;
+}
+
+.learnHublist ul {
+    list-style-type: none;
+}
+
+.learnHublist a {
+    text-decoration: none;
+    color: var(--text-main);
+}
 
 /* Arts & Humanities, Science, Social Sciences(Natural Sciences), Medicine and Health Sciences, Engineering and Technology, Business and Commerce, Education
