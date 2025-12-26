@@ -26,6 +26,12 @@ code, pre{
     font-size: 400;
 }
 
+.header-box {
+    flex-direction: column;
+    height: fit-content;
+    display: flex;
+}
+
 .topbar {
     display: flex;
     width: 100%;
@@ -39,16 +45,18 @@ code, pre{
 }
 
 .homeheader {
+    display: flex;
     padding: 2rem 2rem 2rem 3.5rem;
     margin: auto;
     width: auto;
-    height: auto;
+    height:fit-content;
 }
 
 img {
     display: block;
     margin:auto;
     width: 30%;
+    height: auto;
 }
 
 body{
